@@ -1,404 +1,350 @@
-// --- DATA MATA PELAJARAN BAHASA INDONESIA ---
-if (typeof window.subjects === "undefined") {
-    window.subjects = [];
-}
-
-window.subjects.push({
-    id: "indonesia",
-    name: "Bahasa Indonesia",
-    icon: "ph-book-open-text", // Ikon buku terbuka untuk literasi/bahasa
-    color: "text-rose-500 dark:text-rose-400" 
+subjects.push({ 
+    id: 'ind', 
+    name: 'Bahasa Indonesia', 
+    icon: 'ph-book-open-text', 
+    color: 'text-rose-500 dark:text-rose-400' 
 });
 
-if (typeof window.quizData === "undefined") {
-    window.quizData = {};
-}
+quizData['ind'] = [
+    // --- BAGIAN A: HIKAYAT ---
+    {
+        story: "Petunjuk: Pilih satu jawaban yang paling tepat.",
+        question: "Dalam sebuah kutipan hikayat tertulis, \"Hatta, sebermula maka sang raja pun memberikan titah kepada panglima...\" Penggunaan kata-kata yang digarisbawahi menunjukkan bahwa hikayat memiliki karakteristik...",
+        options: ["Pralogis", "Istanasentris", "Arkais", "Kesaktian", "Anonim"],
+        answer: 2,
+        explanation: "Kata-kata seperti hatta, sebermula, titah adalah contoh bahasa kuno (arkais) yang sudah usang dan jarang dipakai sekarang."
+    },
+    {
+        story: "Petunjuk: Pilihan Ganda Kompleks (A: 1,2,3 Benar | B: 1,3 Benar | C: 2,4 Benar | D: 4 Benar | E: Semua Benar)",
+        question: "Berikut ini yang termasuk ke dalam ciri-ciri dari Hikayat sebagai sastra epik lama adalah:<br><br>(1) Istanasentris (pusat cerita di lingkungan kerajaan)<br>(2) Memiliki pengarang yang jelas (tidak anonim)<br>(3) Mengandung unsur pralogis (kemustahilan)<br>(4) Ditulis menggunakan bahasa Indonesia modern",
+        options: ["A. (1), (2), dan (3) benar", "B. (1) dan (3) benar", "C. (2) dan (4) benar", "D. Hanya (4) yang benar", "E. Semuanya benar"],
+        answer: 1,
+        explanation: "Hikayat itu anonim (pengarang tidak diketahui karena disebarkan secara lisan) sehingga pernyataan 2 salah, dan menggunakan bahasa arkais/kuno sehingga pernyataan 4 salah."
+    },
+    {
+        story: "Petunjuk: Sebab-Akibat (A: Benar-Benar-Berhubungan | B: Benar-Benar-Tidak Berhubungan | C: Benar-Salah | D: Salah-Benar | E: Salah-Salah)",
+        question: "<b>Pernyataan:</b> Kisah dalam hikayat sering kali menampilkan tokoh yang memiliki kesaktian.<br><b>SEBAB</b><br><b>Alasan:</b> Hikayat selalu menceritakan kejadian yang sangat logis dan sesuai dengan hukum alam.",
+        options: [
+            "A. Pernyataan Benar, Alasan Benar, ADA hubungan", 
+            "B. Pernyataan Benar, Alasan Benar, TIDAK ADA hubungan", 
+            "C. Pernyataan Benar, Alasan Salah", 
+            "D. Pernyataan Salah, Alasan Benar", 
+            "E. Keduanya Salah"
+        ],
+        answer: 2,
+        explanation: "Tokoh hikayat memang punya kekuatan super (kesaktian), tetapi alasannya salah karena hikayat justru bersifat pralogis (melanggar hukum alam/mustahil)."
+    },
+    {
+        story: "Petunjuk: Pilih satu jawaban yang paling tepat.",
+        question: "\"Masyarakat di desa itu bergotong-royong membantu memadamkan api yang membakar lumbung padi.\"<br><br>Kutipan di atas mengandung nilai...",
+        options: ["Agama", "Moral", "Sosial", "Budaya", "Politik"],
+        answer: 2,
+        explanation: "Nilai sosial berkaitan dengan hubungan antarmanusia dan kepedulian di dalam masyarakat, seperti kegiatan bergotong-royong."
+    },
+    {
+        story: "Petunjuk: Pilihan Ganda Kompleks (A: 1,2,3 Benar | B: 1,3 Benar | C: 2,4 Benar | D: 4 Benar | E: Semua Benar)",
+        question: "Contoh kemustahilan (pralogis) yang sering ditemukan dalam teks hikayat adalah:<br><br>(1) Seorang bayi lahir langsung membawa pedang<br>(2) Seorang putri lahir dari gendang<br>(3) Kerajaan dibangun dalam semalam oleh jin<br>(4) Pangeran yang berlatih pedang setiap pagi",
+        options: ["A. (1), (2), dan (3) benar", "B. (1) dan (3) benar", "C. (2) dan (4) benar", "D. Hanya (4) yang benar", "E. Semuanya benar"],
+        answer: 0,
+        explanation: "Pilihan 1, 2, dan 3 sangat melanggar hukum alam (pralogis). Sedangkan pilihan 4 adalah hal lumrah yang masuk akal sehat."
+    },
+    {
+        story: "Petunjuk: Sebab-Akibat (A: Benar-Benar-Berhubungan | B: Benar-Benar-Tidak Berhubungan | C: Benar-Salah | D: Salah-Benar | E: Salah-Salah)",
+        question: "<b>Pernyataan:</b> Hikayat pada zaman dahulu tidak diketahui siapa pencipta awalnya (anonim).<br><b>SEBAB</b><br><b>Alasan:</b> Cerita hikayat disampaikan dari mulut ke mulut secara lisan pada kebudayaan Melayu klasik.",
+        options: [
+            "A. Pernyataan Benar, Alasan Benar, ADA hubungan", 
+            "B. Pernyataan Benar, Alasan Benar, TIDAK ADA hubungan", 
+            "C. Pernyataan Benar, Alasan Salah", 
+            "D. Pernyataan Salah, Alasan Benar", 
+            "E. Keduanya Salah"
+        ],
+        answer: 0,
+        explanation: "Tradisi lisan dari mulut ke mulut membuat suatu cerita menyebar tanpa ada catatan tertulis mengenai siapa pencipta aslinya (bersifat anonim)."
+    },
+    {
+        story: "Petunjuk: Pilih satu jawaban yang paling tepat.",
+        question: "Jika sebuah teks hikayat menceritakan sang pangeran yang tetap menghormati pengemis walaupun bajunya lusuh, maka teks tersebut sedang menonjolkan nilai...",
+        options: ["Agama", "Sosial", "Moral", "Budaya", "Estetika"],
+        answer: 2,
+        explanation: "Nilai moral sangat berkaitan dengan adab, sopan santun, atau sikap baik dan buruk seseorang secara etika."
+    },
+    {
+        story: "Petunjuk: Pilih satu jawaban yang paling tepat.",
+        question: "\"Raja mengadakan pesta tujuh hari tujuh malam untuk menyambut kelahiran putranya.\"<br><br>Berdasarkan cara menganalisis hikayat, kalimat tersebut merupakan representasi dari nilai...",
+        options: ["Agama", "Moral", "Sosial", "Budaya", "Kesaktian"],
+        answer: 3,
+        explanation: "Nilai budaya berkaitan erat dengan adat, tradisi, atau kebiasaan turun-temurun suatu daerah (seperti pesta penyambutan besar-besaran/selamatan)."
+    },
+    {
+        story: "Petunjuk: Pilihan Ganda Kompleks (A: 1,2,3 Benar | B: 1,3 Benar | C: 2,4 Benar | D: 4 Benar | E: Semua Benar)",
+        question: "Karakteristik istanasentris dalam hikayat dibuktikan dengan hadirnya tokoh-tokoh sentral seperti:<br><br>(1) Raja<br>(2) Pangeran<br>(3) Permaisuri<br>(4) Panglima perang",
+        options: ["A. (1), (2), dan (3) benar", "B. (1) dan (3) benar", "C. (2) dan (4) benar", "D. Hanya (4) yang benar", "E. Semuanya benar"],
+        answer: 4,
+        explanation: "Istanasentris berarti pusat cerita dan konfliknya selalu berada di lingkungan dalam kerajaan beserta para elit di dalamnya."
+    },
+    {
+        story: "Petunjuk: Sebab-Akibat (A: Benar-Benar-Berhubungan | B: Benar-Benar-Tidak Berhubungan | C: Benar-Salah | D: Salah-Benar | E: Salah-Salah)",
+        question: "<b>Pernyataan:</b> Kata \"upeti\" dalam hikayat merupakan contoh dari karakteristik arkais.<br><b>SEBAB</b><br><b>Alasan:</b> Upeti berarti pajak atau persembahan yang lazim digunakan dalam sistem kerajaan masa lalu.",
+        options: [
+            "A. Pernyataan Benar, Alasan Benar, ADA hubungan", 
+            "B. Pernyataan Benar, Alasan Benar, TIDAK ADA hubungan", 
+            "C. Pernyataan Benar, Alasan Salah", 
+            "D. Pernyataan Salah, Alasan Benar", 
+            "E. Keduanya Salah"
+        ],
+        answer: 0,
+        explanation: "\"Upeti\" adalah salah satu kosakata usang (arkais) yang maknanya sangat identik dengan pembayaran/persembahan kepada seorang raja."
+    },
 
-// Opsi Standar untuk tipe soal khusus
-const opsiKompleksIndo = [
-    "Jika (1), (2), dan (3) yang benar.",
-    "Jika (1) dan (3) yang benar.",
-    "Jika (2) dan (4) yang benar.",
-    "Jika HANYA (4) yang benar.",
-    "Jika SEMUA pernyataan benar."
-];
+    // --- BAGIAN B: CERPEN ---
+    {
+        story: "Petunjuk: Pilih satu jawaban yang paling tepat.",
+        question: "Gagasan utama yang menjadi \"roh\" dalam sebuah cerita pendek dinamakan...",
+        options: ["Judul", "Tema", "Alur", "Penokohan", "Amanat"],
+        answer: 1,
+        explanation: "Tema adalah gagasan utama yang mendasari jalannya cerita, sedangkan judul hanyalah nama luar dari cerita tersebut."
+    },
+    {
+        story: "Petunjuk: Pilihan Ganda Kompleks (A: 1,2,3 Benar | B: 1,3 Benar | C: 2,4 Benar | D: 4 Benar | E: Semua Benar)",
+        question: "\"Kamar itu berantakan, baju kotor menumpuk di sudut, dan sisa makanan dibiarkan di meja.\"<br><br>Berdasarkan kutipan di atas, teknik penokohan yang digunakan penulis memiliki ciri:<br><br>(1) Disebut sebagai teknik penokohan dramatik<br>(2) Menyiratkan watak tokoh yang jorok atau pemalas<br>(3) Penulis tidak menyebutkan watak tokoh secara langsung<br>(4) Disebut sebagai teknik penokohan analitik",
+        options: ["A. (1), (2), dan (3) benar", "B. (1) dan (3) benar", "C. (2) dan (4) benar", "D. Hanya (4) yang benar", "E. Semuanya benar"],
+        answer: 0,
+        explanation: "Ini adalah contoh nyata penokohan dramatik (secara tidak langsung), di mana watak pemalas/jorok disiratkan lewat deskripsi lingkungan fisik kamar tokoh."
+    },
+    {
+        story: "Petunjuk: Sebab-Akibat (A: Benar-Benar-Berhubungan | B: Benar-Benar-Tidak Berhubungan | C: Benar-Salah | D: Salah-Benar | E: Salah-Salah)",
+        question: "<b>Pernyataan:</b> Sudut pandang orang pertama selalu menggunakan nama tokoh secara eksplisit seperti Budi atau Siti.<br><b>SEBAB</b><br><b>Alasan:</b> Pada sudut pandang orang pertama, penulis bertindak sebagai \"Aku\" atau \"Saya\" dalam cerita tersebut.",
+        options: [
+            "A. Pernyataan Benar, Alasan Benar, ADA hubungan", 
+            "B. Pernyataan Benar, Alasan Benar, TIDAK ADA hubungan", 
+            "C. Pernyataan Benar, Alasan Salah", 
+            "D. Pernyataan Salah, Alasan Benar", 
+            "E. Keduanya Salah"
+        ],
+        answer: 3,
+        explanation: "Pernyataan bernilai salah karena sudut pandang orang pertama mutlak menggunakan kata ganti \"Aku\" atau \"Saya\", bukan menyebut nama tokoh pihak ketiga (seperti Budi/Siti)."
+    },
+    {
+        story: "Petunjuk: Pilih satu jawaban yang paling tepat.",
+        question: "Bagian dalam struktur cerpen di mana mulai bermunculan percikan masalah yang dialami tokoh (misalnya: Tokoh A tiba-tiba menyadari ia kehilangan uang bayaran sekolahnya) disebut...",
+        options: ["Orientasi", "Komplikasi", "Evaluasi", "Klimaks", "Resolusi"],
+        answer: 1,
+        explanation: "Komplikasi adalah tahap awal di mana masalah/konflik mulai muncul sebelum akhirnya meruncing dan mencapai puncaknya (Klimaks)."
+    },
+    {
+        story: "Petunjuk: Pilih satu jawaban yang paling tepat.",
+        question: "Dalam sebuah cerpen, diceritakan masa lalu sang kakek saat masih berjuang di medan perang, lalu secara halus cerita kembali ke masa kini. Alur yang digunakan adalah...",
+        options: ["Progresif", "Mundur (Regresif)", "Maju", "Lurus", "Campuran"],
+        answer: 1,
+        explanation: "Cerita yang mengambil awalan di masa kini lalu mundur jauh untuk menceritakan kisah masa lalu disebut alur mundur (flashback/regresif)."
+    },
+    {
+        story: "Petunjuk: Pilihan Ganda Kompleks (A: 1,2,3 Benar | B: 1,3 Benar | C: 2,4 Benar | D: 4 Benar | E: Semua Benar)",
+        question: "Struktur penyusun teks cerpen meliputi tahapan secara urut:<br><br>(1) Orientasi<br>(2) Komplikasi<br>(3) Evaluasi (Klimaks)<br>(4) Resolusi",
+        options: ["A. (1), (2), dan (3) benar", "B. (1) dan (3) benar", "C. (2) dan (4) benar", "D. Hanya (4) yang benar", "E. Semuanya benar"],
+        answer: 4,
+        explanation: "Keempat bagian tersebut adalah tulang punggung struktur pembangun alur sebuah cerita pendek secara definitif."
+    },
+    {
+        story: "Petunjuk: Sebab-Akibat (A: Benar-Benar-Berhubungan | B: Benar-Benar-Tidak Berhubungan | C: Benar-Salah | D: Salah-Benar | E: Salah-Salah)",
+        question: "<b>Pernyataan:</b> Tahap resolusi adalah puncak ketegangan di mana masalah paling ruwet terjadi (misal: tokoh A dituduh mencuri dan hampir dikeluarkan).<br><b>SEBAB</b><br><b>Alasan:</b> Resolusi merupakan tahap akhir dari struktur cerpen yang khusus berisi pengenalan tokoh.",
+        options: [
+            "A. Pernyataan Benar, Alasan Benar, ADA hubungan", 
+            "B. Pernyataan Benar, Alasan Benar, TIDAK ADA hubungan", 
+            "C. Pernyataan Benar, Alasan Salah", 
+            "D. Pernyataan Salah, Alasan Benar", 
+            "E. Keduanya Salah"
+        ],
+        answer: 4,
+        explanation: "Puncak ketegangan disebut Evaluasi/Klimaks. Resolusi justru adalah jalan keluar atau penyelesaian masalah. Sementara pengenalan tokoh mutlak berada di tahap awal (Orientasi)."
+    },
+    {
+        story: "Petunjuk: Pilih satu jawaban yang paling tepat.",
+        question: "Jika penulis cerita seolah bertindak layaknya sutradara serba tahu yang mengerti segala isi hati, pikiran, hingga rahasia terdalam dari tokoh Budi, maka penulis menggunakan sudut pandang...",
+        options: ["Orang pertama pelaku utama", "Orang pertama pelaku sampingan", "Orang ketiga serba tahu", "Orang ketiga pengamat", "Campuran"],
+        answer: 2,
+        explanation: "Sudut pandang orang ketiga serba tahu bisa mendeskripsikan secara totalitas isi hati dan pikiran karakter (menyebut \"Dia\"/Budi), tidak terbatas pada apa yang tampak secara fisik."
+    },
+    {
+        story: "Petunjuk: Pilihan Ganda Kompleks (A: 1,2,3 Benar | B: 1,3 Benar | C: 2,4 Benar | D: 4 Benar | E: Semua Benar)",
+        question: "Penulis dapat menanamkan dan menggambarkan watak tokoh secara dramatik (tidak langsung) melalui:<br><br>(1) Dialog antartokoh<br>(2) Tingkah laku dan perbuatan tokoh<br>(3) Pendeskripsian lingkungan fisik tokoh<br>(4) Menyebutkan secara lugas watak tokoh",
+        options: ["A. (1), (2), dan (3) benar", "B. (1) dan (3) benar", "C. (2) dan (4) benar", "D. Hanya (4) yang benar", "E. Semuanya benar"],
+        answer: 0,
+        explanation: "Metode menyebutkan secara lugas/gamblang (nomor 4) adalah ciri murni dari penokohan analitik (langsung), bukan dramatik."
+    },
+    {
+        story: "Petunjuk: Pilih satu jawaban yang paling tepat.",
+        question: "Bagian orientasi pada cerpen yang membangun fondasi suasana biasanya diletakkan pada...",
+        options: ["Akhir cerita sebagai jalan keluar", "Puncak masalah", "Awal paragraf (1-2)", "Percikan masalah pertama", "Dialog penutup tokoh utama"],
+        answer: 2,
+        explanation: "Orientasi selalu berada di paragraf awal (1-2) yang berisi deskripsi fondasi seperti pengenalan tokoh, waktu, dan suasana tempat (setting)."
+    },
 
-const opsiSebabAkibatIndo = [
-    "Pernyataan BENAR, Alasan BENAR, dan ADA hubungan sebab-akibat.",
-    "Pernyataan BENAR, Alasan BENAR, tetapi TIDAK ADA hubungan.",
-    "Pernyataan BENAR, Alasan SALAH.",
-    "Pernyataan SALAH, Alasan BENAR.",
-    "Keduanya SALAH."
-];
+    // --- BAGIAN C: BIOGRAFI ---
+    {
+        story: "Petunjuk: Pilih satu jawaban yang paling tepat.",
+        question: "Perbedaan paling fundamental antara teks biografi dan autobiografi terletak pada...",
+        options: ["Tokoh pahlawan yang diceritakan", "Panjang pendeknya halaman cerita", "Siapa penulis cerita tersebut", "Penggunaan bahasa baku arkais", "Latar tempat dan kejadian"],
+        answer: 2,
+        explanation: "Biografi ditulis oleh pihak ketiga (orang lain), sedangkan autobiografi ditulis oleh tokoh subjek itu sendiri."
+    },
+    {
+        story: "Petunjuk: Pilihan Ganda Kompleks (A: 1,2,3 Benar | B: 1,3 Benar | C: 2,4 Benar | D: 4 Benar | E: Semua Benar)",
+        question: "Bagian \"Kejadian Penting / Peristiwa dan Masalah\" dalam teks biografi memiliki fungsi penting karena biasanya mendeskripsikan hal-hal berikut:<br><br>(1) Kronologi perjalanan hidup<br>(2) Riwayat pendidikan dan karier<br>(3) Kegagalan dan rintangan yang dialami tokoh<br>(4) Kesuksesan yang akhirnya diraih tokoh",
+        options: ["A. (1), (2), dan (3) benar", "B. (1) dan (3) benar", "C. (2) dan (4) benar", "D. Hanya (4) yang benar", "E. Semuanya benar"],
+        answer: 4,
+        explanation: "Bagian inti/isi biografi secara definitif memuat perjalanan hidup tokoh secara utuh, melingkupi pendidikan, fase jatuh/gagal, hingga fase puncaknya (sukses)."
+    },
+    {
+        story: "Petunjuk: Sebab-Akibat (A: Benar-Benar-Berhubungan | B: Benar-Benar-Tidak Berhubungan | C: Benar-Salah | D: Salah-Benar | E: Salah-Salah)",
+        question: "<b>Pernyataan:</b> Bagian reorientasi dalam teks biografi bersifat opsional (boleh dilampirkan atau tidak sama sekali).<br><b>SEBAB</b><br><b>Alasan:</b> Reorientasi murni hanya berisi pandangan, simpulan, atau komentar pribadi sang penulis terhadap tokoh tersebut.",
+        options: [
+            "A. Pernyataan Benar, Alasan Benar, ADA hubungan", 
+            "B. Pernyataan Benar, Alasan Benar, TIDAK ADA hubungan", 
+            "C. Pernyataan Benar, Alasan Salah", 
+            "D. Pernyataan Salah, Alasan Benar", 
+            "E. Keduanya Salah"
+        ],
+        answer: 0,
+        explanation: "Karena sifatnya yang hanya berupa opini, simpulan, atau pesan tambahan dari penulis, reorientasi tidak diwajibkan ada dalam merangkai kronologi sejarah tokoh."
+    },
+    {
+        story: "Petunjuk: Pilih satu jawaban yang paling tepat.",
+        question: "\"Ki Hajar Dewantara adalah sosok pejuang sejati yang pantang menyerah.\"\n\nCara penulis dalam menggambarkan karakter unggul tokoh pada kalimat di atas menggunakan metode...",
+        options: ["Deskripsi tindakan", "Langsung", "Dialog tokoh", "Reorientasi", "Pralogis"],
+        answer: 1,
+        explanation: "Penulis secara \"Langsung\" menyebutkan sifat/watak tokoh secara gamblang di dalam kalimat (pantang menyerah)."
+    },
+    {
+        story: "Petunjuk: Pilih satu jawaban yang paling tepat.",
+        question: "Dalam menyusun struktur biografi, pengenalan latar belakang tokoh secara umum seperti nama lengkap, asal orang tua, dan masa kecil harus terdapat pada bagian...",
+        options: ["Resolusi", "Orientasi", "Komplikasi", "Reorientasi", "Kejadian Penting"],
+        answer: 1,
+        explanation: "Orientasi atau bagian pendahuluan adalah gerbang awal yang selalu digunakan untuk pengenalan dasar seorang tokoh."
+    },
+    {
+        story: "Petunjuk: Pilihan Ganda Kompleks (A: 1,2,3 Benar | B: 1,3 Benar | C: 2,4 Benar | D: 4 Benar | E: Semua Benar)",
+        question: "Sebuah teks biografi yang baik ditulis dengan tujuan edukatif agar pembaca dapat:<br><br>(1) Menemukan ragam nilai keteladanan<br>(2) Menganalisis struktur pola kehidupannya<br>(3) Mengambil pelajaran dari karakter unggul tokoh<br>(4) Mencari kemustahilan cerita layaknya fiksi",
+        options: ["A. (1), (2), dan (3) benar", "B. (1) dan (3) benar", "C. (2) dan (4) benar", "D. Hanya (4) yang benar", "E. Semuanya benar"],
+        answer: 0,
+        explanation: "Biografi adalah teks faktual yang berbasis riwayat nyata, sehingga tidak boleh ada kemustahilan/pralogis di dalamnya (karena nomor 4 adalah ciri murni hikayat)."
+    },
+    {
+        story: "Petunjuk: Sebab-Akibat (A: Benar-Benar-Berhubungan | B: Benar-Benar-Tidak Berhubungan | C: Benar-Salah | D: Salah-Benar | E: Salah-Salah)",
+        question: "<b>Pernyataan:</b> \"Meski diasingkan ke Belanda dalam udara dingin, ia tetap menulis kritik untuk membela rakyatnya.\" Kutipan ini jelas menggambarkan karakter patriotik melalui teknik deskripsi tindakan.<br><b>SEBAB</b><br><b>Alasan:</b> Sang penulis tidak menyebutkan kata \"patriotik\" secara harfiah, melainkan menunjukkannya lewat gestur dan perbuatan berani sang tokoh.",
+        options: [
+            "A. Pernyataan Benar, Alasan Benar, ADA hubungan", 
+            "B. Pernyataan Benar, Alasan Benar, TIDAK ADA hubungan", 
+            "C. Pernyataan Benar, Alasan Salah", 
+            "D. Pernyataan Salah, Alasan Benar", 
+            "E. Keduanya Salah"
+        ],
+        answer: 0,
+        explanation: "Ini adalah contoh teknis yang sempurna mengenai analisis keteladanan yang memanfaatkan pendekatan \"Deskripsi Tindakan\"."
+    },
+    {
+        story: "Petunjuk: Pilih satu jawaban yang paling tepat.",
+        question: "\"Dari panjangnya perjalanan jatuh bangun B.J. Habibie, kita dapat belajar bahwa tingginya kecerdasan akal harus selalu diimbangi dengan dalamnya cinta tanah air.\"\n\nKutipan penuh makna di atas paling tepat digolongkan ke dalam bagian...",
+        options: ["Orientasi", "Peristiwa", "Reorientasi", "Klimaks", "Resolusi"],
+        answer: 2,
+        explanation: "Bagian yang sarat pesan tersebut merupakan bentuk simpulan/komentar dari penulis yang diletakkan di akhir cerita biografi (Reorientasi)."
+    },
+    {
+        story: "Petunjuk: Pilih satu jawaban yang paling tepat.",
+        question: "Biografi memfokuskan penceritaan pada figur tokoh nyata di dunia. Sudut pandang yang mutlak digunakan oleh penulis biografi adalah...",
+        options: ["Orang pertama", "Orang ketiga", "Orang kedua", "Campuran", "Serba tahu mutlak"],
+        answer: 1,
+        explanation: "Karena ditulis oleh pihak eksternal, ceritanya mutlak menggunakan sudut pandang orang ketiga (dengan menyebut nama tokoh secara utuh atau menggunakan kata ganti \"Ia/Beliau\")."
+    },
+    {
+        story: "Petunjuk: Pilihan Ganda Kompleks (A: 1,2,3 Benar | B: 1,3 Benar | C: 2,4 Benar | D: 4 Benar | E: Semua Benar)",
+        question: "Teks biografi ditopang oleh bagian isi yang merupakan porsi terpanjang (badan utama) dari teks. Bagian krusial ini dinamakan:<br><br>(1) Kejadian Penting<br>(2) Peristiwa<br>(3) Masalah<br>(4) Orientasi Utama",
+        options: ["A. (1), (2), dan (3) benar", "B. (1) dan (3) benar", "C. (2) dan (4) benar", "D. Hanya (4) yang benar", "E. Semuanya benar"],
+        answer: 0,
+        explanation: "Secara definitif, teks menyebutkan bagian isi ini sebagai \"Kejadian Penting / Peristiwa dan Masalah\". Orientasi adalah murni sebatas pendahuluan cerita."
+    },
 
-const opsiBenarSalahIndo = ["Benar", "Salah"];
-
-// --- DATA SOAL BAHASA INDONESIA KELAS X ---
-window.quizData["indonesia"] = [
+    // --- BAGIAN D: NEGOSIASI ---
     {
-        question: "Struktur teks negosiasi yang merupakan inti dari proses tawar-menawar antara kedua belah pihak untuk mencari titik temu disebut...",
+        story: "Petunjuk: Pilih satu jawaban yang paling tepat.",
+        question: "Orientasi paling mendasar dan tujuan utama dari pelaksanaan sebuah negosiasi yang sehat adalah untuk mencapai...",
+        options: ["Kemenangan mutlak sepihak", "Win-win solution (kesepakatan yang adil dan menguntungkan kedua belah pihak)", "Kesepakatan yang dicapai secara terpaksa", "Adu argumen terkuat tanpa solusi", "Kekalahan telak pihak yang mengajukan proposal"],
+        answer: 1,
+        explanation: "Negosiasi sejatinya bertujuan untuk mencari titik temu dan kesepakatan damai (win-win solution)."
+    },
+    {
+        story: "Petunjuk: Pilihan Ganda Kompleks (A: 1,2,3 Benar | B: 1,3 Benar | C: 2,4 Benar | D: 4 Benar | E: Semua Benar)",
+        question: "Secara prosedural, tahapan struktur teks negosiasi yang berurutan meliputi kerangka berikut:<br><br>(1) Orientasi<br>(2) Pengajuan<br>(3) Penawaran<br>(4) Persetujuan",
+        options: ["A. (1), (2), dan (3) benar", "B. (1) dan (3) benar", "C. (2) dan (4) benar", "D. Hanya (4) yang benar", "E. Semuanya benar"],
+        answer: 4,
+        explanation: "Struktur komprehensif negosiasi memang dibentuk dari urutan baku: Orientasi &rarr; Pengajuan &rarr; Penawaran &rarr; Persetujuan &rarr; Penutup."
+    },
+    {
+        story: "Petunjuk: Sebab-Akibat (A: Benar-Benar-Berhubungan | B: Benar-Benar-Tidak Berhubungan | C: Benar-Salah | D: Salah-Benar | E: Salah-Salah)",
+        question: "<b>Pernyataan:</b> Proses negosiasi yang baik tidak boleh sedikit pun mengandung unsur paksaan atau ancaman secara verbal.<br><b>SEBAB</b><br><b>Alasan:</b> Tindakan negosiasi yang menekan justru akan menjadi bumerang dan menghambat terjadinya persetujuan atau win-win solution.",
         options: [
-            "Orientasi",
-            "Pengajuan",
-            "Penawaran",
-            "Persetujuan",
-            "Penutup"
+            "A. Pernyataan Benar, Alasan Benar, ADA hubungan", 
+            "B. Pernyataan Benar, Alasan Benar, TIDAK ADA hubungan", 
+            "C. Pernyataan Benar, Alasan Salah", 
+            "D. Pernyataan Salah, Alasan Benar", 
+            "E. Keduanya Salah"
         ],
-        answer: 2, 
-        explanation: "Penawaran adalah puncak/inti dari negosiasi di mana terjadi proses tawar-menawar setelah salah satu pihak melakukan pengajuan."
+        answer: 0,
+        explanation: "Kaidah kebahasaan utama dari negosiasi adalah \"Tidak Menekan\" demi mendapat solusi terbaik tanpa ada pihak yang merasa dirugikan."
     },
     {
-        question: "<b>Pernyataan:</b> Dalam teks biografi, bagian reorientasi bersifat opsional (boleh ada atau tidak).<br><br><b>Sebab</b><br><br><b>Alasan:</b> Reorientasi hanya berisi pandangan pribadi atau simpulan penulis terhadap tokoh yang diceritakan, bukan merupakan fakta sejarah tokoh.",
-        options: opsiSebabAkibatIndo,
-        answer: 0, 
-        explanation: "Pernyataan benar dan alasan benar serta saling berhubungan. Reorientasi merupakan komentar evaluatif penulis, sehingga kehadirannya dalam biografi boleh diabaikan demi menjaga keobjektifan sejarah tokoh."
+        story: "Petunjuk: Pilih satu jawaban yang paling tepat.",
+        question: "\"Kami mewakili rekan OSIS ingin meminjam aula ini untuk pergelaran Pensi akbar bulan depan, Bapak Kepala Sekolah.\"\n\nDalam anatomi struktur teks negosiasi, ucapan tersebut tepat dimasukkan ke dalam tahapan...",
+        options: ["Orientasi", "Pengajuan", "Penawaran", "Persetujuan", "Penutup"],
+        answer: 1,
+        explanation: "Tahap Pengajuan merupakan saat yang spesifik di mana seseorang secara resmi menyampaikan maksud permintaan atau kepentingannya."
     },
     {
-        question: "Perhatikan kutipan puisi berikut:<br><br><i>Pagiku hilang sudah melayang,<br>Hari mudaku sudah pergi,<br>Sekarang petang datang membayang,<br>Batang usiaku sudah tinggi.</i><br>(Karya: Ali Hasjmy)<br><br>Citraan (imaji) yang paling dominan dalam kutipan puisi di atas adalah...",
+        story: "Petunjuk: Pilih satu jawaban yang paling tepat.",
+        question: "\"Tolong dipertimbangkan kembali keputusannya ya, Pak, karena acara Pensi mandiri ini rekam jejaknya sangat bagus untuk mengangkat akreditasi sekolah kita.\"\n\nKalimat di atas mengaplikasikan kaidah kebahasaan negosiasi yang bersifat...",
+        options: ["Deklaratif", "Persuasif", "Interogatif", "Memaksa (Koersif)", "Imperatif"],
+        answer: 1,
+        explanation: "Kalimat persuasif murni berfungsi sebagai sarana untuk membujuk dan meluluhkan hati lawan bicara secara halus dan bernada rasional."
+    },
+    {
+        story: "Petunjuk: Pilihan Ganda Kompleks (A: 1,2,3 Benar | B: 1,3 Benar | C: 2,4 Benar | D: 4 Benar | E: Semua Benar)",
+        question: "Ciri-ciri kaidah kebahasaan yang esensial dan wajib tersemat dalam praktik teks negosiasi adalah:<br><br>(1) Argumen yang terbangun Logis<br>(2) Menggunakan Bahasa Persuasif<br>(3) Memiliki Pasangan Tuturan bersahut<br>(4) Terdiri dari Kalimat Deklaratif yang lugas",
+        options: ["A. (1), (2), dan (3) benar", "B. (1) dan (3) benar", "C. (2) dan (4) benar", "D. Hanya (4) yang benar", "E. Semuanya benar"],
+        answer: 4,
+        explanation: "Seluruh poin-poin tersebut (1 sampai 4) adalah pilar-pilar penting pembangun strategi kebahasaan khusus untuk teks negosiasi."
+    },
+    {
+        story: "Petunjuk: Sebab-Akibat (A: Benar-Benar-Berhubungan | B: Benar-Benar-Tidak Berhubungan | C: Benar-Salah | D: Salah-Benar | E: Salah-Salah)",
+        question: "<b>Pernyataan:</b> Argumen yang dilontarkan saat panasnya proses tawar-menawar (penawaran) tidak boleh disajikan sekadar seperti mengemis belas kasihan.<br><b>SEBAB</b><br><b>Alasan:</b> Nilai sebuah argumen diuji dari akal sehat (logis) dan berbasis pada fakta empiris agar pihak lawan mau menyetujui tanpa keraguan.",
         options: [
-            "Penglihatan (Visual)",
-            "Pendengaran (Auditori)",
-            "Perabaan (Taktil)",
-            "Penciuman (Olfaktori)",
-            "Pengecapan (Gustatori)"
+            "A. Pernyataan Benar, Alasan Benar, ADA hubungan", 
+            "B. Pernyataan Benar, Alasan Benar, TIDAK ADA hubungan", 
+            "C. Pernyataan Benar, Alasan Salah", 
+            "D. Pernyataan Salah, Alasan Benar", 
+            "E. Keduanya Salah"
         ],
-        answer: 0, 
-        explanation: "Kata-kata seperti 'membayang', 'hilang', dan pendeskripsian waktu (pagi, petang) merangsang indra penglihatan (visual) pembaca."
+        answer: 0,
+        explanation: "Argumen logis yang tidak berdasar pada rasa belas kasih (emosi) menjadi faktor penentu dan kunci utama suksesnya perundingan negosiasi."
     },
     {
-        question: "Ciri kebahasaan teks negosiasi ditunjukkan oleh nomor...<br><br>(1) Menggunakan kalimat persuasif.<br>(2) Terdapat tuturan berpasangan (dialog).<br>(3) Menggunakan pronomina persona.<br>(4) Menggunakan majas hiperbola secara dominan.",
-        options: opsiKompleksIndo,
-        answer: 0, 
-        explanation: "(1), (2), dan (3) adalah ciri bahasa negosiasi. Poin (4) salah karena hiperbola adalah ciri puisi/sastra, sedangkan negosiasi membutuhkan bahasa yang santun, logis, dan argumentatif."
+        story: "Petunjuk: Pilih satu jawaban yang paling tepat.",
+        question: "\"Selamat pagi sejahtera, Pak Budi. Maksud kedatangan kami yang jauh ke kantor ini sejatinya ingin bersilaturahmi menyambung tali persaudaraan...\"\n\nTahapan berbasa-basi yang brilian ini memegang fungsi sebagai pembuka obrolan yang dinamakan...",
+        options: ["Orientasi", "Pengajuan", "Persetujuan", "Pasangan Tuturan", "Resolusi Dinamis"],
+        answer: 0,
+        explanation: "Orientasi merupakan gerbang salam pembuka (ice breaking) sebelum memasuki bagian inti tuntutan dalam sebuah negosiasi."
     },
     {
-        question: "Mosi dalam sebuah debat harus memenuhi kriteria tertentu agar perdebatan berjalan menarik. Kriteria mosi yang baik adalah...",
-        options: [
-            "Mengandung kebenaran mutlak yang tidak bisa dibantah.",
-            "Bersifat netral dan tidak memihak satu isu pun.",
-            "Bersifat kontroversial dan memicu pro-kontra di masyarakat.",
-            "Merupakan masalah pribadi dari salah satu tim.",
-            "Berupa opini tanpa dasar fakta."
-        ],
-        answer: 2, 
-        explanation: "Mosi haruslah isu yang kontroversial (bisa diperdebatkan) sehingga memungkinkan adanya tim Afirmasi (pro) dan tim Oposisi (kontra)."
+        story: "Petunjuk: Pilih satu jawaban yang paling tepat.",
+        question: "Kegiatan negosiasi selalu memancing interaksi dialogis berupa aksi dan reaksi secara konstan, seperti 'meminta &rarr; menolak secara halus / menerima'. Hal unik ini di dalam kajian kebahasaan dikenal sebagai...",
+        options: ["Kalimat Deklaratif", "Argumen Logis", "Pasangan Tuturan", "Struktur Komplikasi", "Bahasa Persuasif"],
+        answer: 2,
+        explanation: "Pasangan tuturan merupakan istilah baku untuk interaksi dua arah (aksi-reaksi yang berbalasan) antar pihak yang sedang berdiskusi."
     },
     {
-        question: "<b>Pernyataan Benar/Salah:</b> Teks autobiografi adalah teks riwayat hidup seseorang yang ditulis oleh orang lain dengan sudut pandang orang ketiga.",
-        options: opsiBenarSalahIndo,
-        answer: 1, 
-        explanation: "Autobiografi ditulis oleh tokohnya sendiri menggunakan sudut pandang orang pertama (aku/saya). Jika ditulis oleh orang lain dengan sudut pandang orang ketiga (dia/ia), itu disebut teks Biografi."
-    },
-    {
-        question: "Kalimat yang menunjukkan tuturan persuasif dalam teks negosiasi adalah...",
-        options: [
-            "\"Harga sepatu ini Rp300.000,00 dan tidak bisa ditawar lagi, Pak.\"",
-            "\"Silakan dicoba dulu, Bu. Kualitas kainnya sangat bagus, dijamin Ibu tidak akan menyesal.\"",
-            "\"Saya tidak setuju dengan keputusan ketua kelas.\"",
-            "\"Apakah barang ini bergaransi resmi?\"",
-            "\"Maaf, kami sedang tutup.\""
-        ],
-        answer: 1, 
-        explanation: "Kalimat tersebut mengandung upaya membujuk (persuasif) lawan bicara agar tertarik membeli barang dengan memberikan argumen kualitas dan jaminan."
-    },
-    {
-        question: "Unsur-unsur fisik puisi yang membentuk struktur wujud puisi meliputi...<br><br>(1) Diksi dan Tipografi<br>(2) Tema dan Amanat<br>(3) Majas dan Rima<br>(4) Perasaan dan Nada",
-        options: opsiKompleksIndo,
-        answer: 1, 
-        explanation: "Unsur fisik puisi adalah unsur yang tampak pada teks (Diksi, Tipografi, Majas, Rima, Imaji, Kata Konkret). Pernyataan (1) dan (3) benar. Tema, amanat, perasaan, dan nada (2 dan 4) adalah unsur batin puisi."
-    },
-    {
-        question: "<b>Pernyataan:</b> Dalam teks debat, tim Netral memiliki peran untuk memberikan dukungan penuh kepada tim Afirmasi jika argumen tim Oposisi dinilai lemah.<br><br><b>Sebab</b><br><br><b>Alasan:</b> Tim Netral adalah pihak penengah yang memberikan pandangan dari dua sisi tanpa memihak.",
-        options: opsiSebabAkibatIndo,
-        answer: 3, 
-        explanation: "Pernyataan salah (Tim Netral tidak boleh memihak siapapun, baik Afirmasi maupun Oposisi). Alasan benar (definisi tim netral adalah penengah yang memberikan perspektif dari kedua sisi)."
-    },
-    {
-        question: "Kutipan biografi: <i>\"B.J. Habibie adalah sosok yang sangat disiplin sejak kecil. Beliau selalu menghargai waktu dan tidak pernah menunda-nunda pekerjaan. Berkat kegigihannya, ia berhasil mendapatkan beasiswa ke Jerman.\"</i><br><br>Hal yang dapat diteladani dari tokoh pada kutipan di atas adalah...",
-        options: [
-            "Kepandaiannya meraih beasiswa.",
-            "Kemampuannya ke luar negeri.",
-            "Kedisiplinan, menghargai waktu, dan kegigihan.",
-            "Kecerdasannya yang merupakan bawaan lahir.",
-            "Menjadi Presiden Republik Indonesia."
-        ],
-        answer: 2, 
-        explanation: "Keteladanan tokoh diambil dari sifat/karakter positif yang bisa diterapkan dalam kehidupan pembaca. Fokus teks adalah pada 'disiplin', 'menghargai waktu', dan 'gigih'."
-    },
-    {
-        question: "Perhatikan kalimat berikut: <i>\"Bapak, saya minta maaf atas keterlambatan pengiriman barang, kami akan memberikan diskon 10% untuk transaksi berikutnya.\"</i><br><br>Dalam struktur surat penawaran/negosiasi tertulis, kalimat tersebut mencerminkan prinsip...",
-        options: [
-            "Meminta keringanan secara paksa.",
-            "Menggunakan bahasa yang tidak santun.",
-            "Win-win solution (mengakomodasi kepentingan bersama).",
-            "Mengancam mitra bisnis.",
-            "Mengubah haluan negosiasi."
-        ],
-        answer: 2, 
-        explanation: "Pemberian kompensasi diskon atas kesalahan adalah bentuk menjaga hubungan baik dan mencari solusi yang menguntungkan kedua belah pihak (win-win solution)."
-    },
-    {
-        question: "Penggunaan kata ganti (pronomina) persona ketiga tunggal sangat umum dalam teks biografi. Contoh pronomina tersebut adalah...<br><br>(1) Dia<br>(2) Beliau<br>(3) Ia<br>(4) Kami",
-        options: opsiKompleksIndo,
-        answer: 0, 
-        explanation: "'Dia', 'Beliau', dan 'Ia' adalah pronomina persona ketiga tunggal (1, 2, 3 benar). 'Kami' adalah pronomina persona pertama jamak (4 salah)."
-    },
-    {
-        question: "<b>Pernyataan Benar/Salah:</b> Dalam puisi kontemporer, unsur tipografi (tata wajah/bentuk fisik puisi) kadang dibuat tidak beraturan, seperti membentuk huruf Z atau zigzag, untuk memperkuat makna tertentu.",
-        options: opsiBenarSalahIndo,
-        answer: 0, 
-        explanation: "Tipografi adalah perwajahan puisi. Puisi modern/kontemporer sering menggunakan tipografi bebas (tidak rata kiri/kanan) untuk menegaskan emosi atau visualisasi makna kata."
-    },
-    {
-        question: "<i>Cuaca di kota ini seakan menangis tersedu-sedu meratapi kepergiannya.</i><br><br>Majas yang digunakan dalam larik puisi tersebut adalah...",
-        options: [
-            "Metafora",
-            "Simile",
-            "Personifikasi",
-            "Hiperbola",
-            "Litotes"
-        ],
-        answer: 2, 
-        explanation: "Personifikasi adalah majas yang melekatkan sifat/perilaku benda hidup manusia ('menangis tersedu-sedu') pada benda mati ('cuaca')."
-    },
-    {
-        question: "Berikut ini yang merupakan tugas Moderator dalam sebuah teks debat adalah...",
-        options: [
-            "Menilai argumen dari setiap tim.",
-            "Mengatur jalannya perdebatan dan membacakan tata tertib.",
-            "Memberikan sanggahan terhadap tim afirmasi.",
-            "Menentukan tim mana yang menang.",
-            "Mencatat seluruh argumen dari setiap pembicara."
-        ],
-        answer: 1, 
-        explanation: "Tugas moderator adalah memimpin sidang/debat, mengatur waktu, membacakan tata tertib, dan menjadi penengah. (Menilai adalah tugas Juri, mencatat adalah tugas Notulen)."
-    },
-    {
-        question: "<b>Pernyataan:</b> Negosiasi tidak akan terjadi jika kedua belah pihak sejak awal sudah memiliki kesepakatan dan tujuan yang sama persis.<br><br><b>Sebab</b><br><br><b>Alasan:</b> Negosiasi pada dasarnya adalah proses komunikasi yang dilakukan untuk menyelesaikan konflik atau perbedaan kepentingan.",
-        options: opsiSebabAkibatIndo,
-        answer: 0, 
-        explanation: "Pernyataan benar dan alasan benar serta saling berhubungan. Syarat utama negosiasi adalah adanya perbedaan kepentingan/kebutuhan yang harus disatukan. Jika sudah sepakat sejak awal, negosiasi tidak diperlukan."
-    },
-    {
-        question: "Kata kerja material (verba tindakan) banyak ditemukan dalam teks biografi untuk menjelaskan aktivitas tokoh. Manakah di bawah ini yang seluruhnya merupakan kata kerja material?",
-        options: [
-            "Membaca, berpikir, menulis.",
-            "Berjalan, menciptakan, menembak.",
-            "Merasakan, bersedih, menangis.",
-            "Meyakini, merenungkan, melamun.",
-            "Adalah, merupakan, yaitu."
-        ],
-        answer: 1, 
-        explanation: "Verba material adalah kata kerja yang menunjukkan aktivitas fisik/tindakan yang dapat dilihat oleh mata (berjalan, menciptakan, menembak). Opsi C dan D mengandung verba mental (perasaan/pikiran). Opsi E adalah verba relasional/kopula."
-    },
-    {
-        question: "Kaidah kebahasaan dalam menyusun teks negosiasi yang tepat antara lain...<br><br>(1) Bahasa yang santun.<br>(2) Bersifat memerintah (imperatif kasar).<br>(3) Argumen yang logis.<br>(4) Menyerang urusan pribadi lawan.",
-        options: opsiKompleksIndo,
-        answer: 1, 
-        explanation: "Negosiasi harus menggunakan bahasa yang santun (1) dan argumen logis (3). Bersifat memerintah secara paksa (2) dan menyerang personal (4) melanggar etika negosiasi."
-    },
-    {
-        question: "<b>Pernyataan Benar/Salah:</b> Amanat dalam sebuah puisi selalu disampaikan secara eksplisit (tersurat) pada bait terakhir agar pembaca tidak kebingungan memaknainya.",
-        options: opsiBenarSalahIndo,
-        answer: 1, 
-        explanation: "Amanat dalam puisi justru lebih sering disampaikan secara implisit (tersirat) di balik diksi dan majas yang digunakan di seluruh isi puisi, bukan selalu tersurat di bait akhir."
-    },
-    {
-        question: "Dalam debat mengenai mosi 'Penerapan Full Day School di Indonesia', argumen: <i>'Pendidikan karakter butuh waktu interaksi panjang antara guru dan siswa di sekolah.'</i> merupakan argumen yang cocok disampaikan oleh...",
-        options: [
-            "Moderator",
-            "Tim Oposisi",
-            "Tim Afirmasi",
-            "Tim Netral",
-            "Notulen"
-        ],
-        answer: 2, 
-        explanation: "Pernyataan tersebut mendukung penerapan jam sekolah yang lebih panjang (Full Day School) untuk pendidikan karakter. Pihak yang mendukung mosi adalah Tim Afirmasi."
-    },
-    {
-        question: "Struktur teks biografi secara berurutan yang benar adalah...",
-        options: [
-            "Orientasi - Reorientasi - Peristiwa/Masalah",
-            "Orientasi - Peristiwa/Masalah - Reorientasi",
-            "Peristiwa - Orientasi - Reorientasi",
-            "Abstrak - Orientasi - Krisis - Koda",
-            "Tesis - Argumentasi - Penegasan Ulang"
-        ],
-        answer: 1, 
-        explanation: "Teks biografi diawali dengan pengenalan latar belakang tokoh (Orientasi), dilanjutkan dengan kronologi kejadian/perjuangan/masalah yang dihadapi tokoh (Peristiwa), dan diakhiri dengan simpulan/pandangan penulis (Reorientasi)."
-    },
-    {
-        question: "Faktor yang membuat sebuah kesepakatan dalam negosiasi dianggap sah dan berhasil adalah...",
-        options: [
-            "Salah satu pihak merasa sangat dirugikan.",
-            "Disetujui karena adanya ancaman.",
-            "Kesepakatan saling menguntungkan (win-win) dan disetujui tanpa paksaan.",
-            "Negosiasi dilakukan dalam waktu yang sangat lama.",
-            "Melibatkan pihak kepolisian."
-        ],
-        answer: 2, 
-        explanation: "Syarat sah dan berhasilnya negosiasi adalah persetujuan bersama yang dicapai tanpa tekanan (sukarela) dan memberikan keuntungan/solusi bagi kedua belah pihak."
-    },
-    {
-        question: "<b>Pernyataan:</b> Dalam berdebat, diperbolehkan menggunakan kalimat yang mengandung logical fallacy (sesat pikir) seperti Ad Hominem (menyerang personal) asalkan bisa menjatuhkan mental lawan.<br><br><b>Sebab</b><br><br><b>Alasan:</b> Tujuan utama debat adalah memenangkan persidangan dengan cara apa pun, termasuk intimidasi psikologis.",
-        options: opsiSebabAkibatIndo,
-        answer: 4, 
-        explanation: "Keduanya salah. Etika debat sangat melarang serangan personal (Ad Hominem) dan logical fallacy. Tujuan debat adalah menguji logika dan fakta atas suatu mosi, bukan ajang menjatuhkan mental lawan secara personal."
-    },
-    {
-        question: "Unsur batin puisi meliputi...<br><br>(1) Tema (Sense)<br>(2) Rasa (Feeling)<br>(3) Nada (Tone)<br>(4) Amanat (Intention)",
-        options: opsiKompleksIndo,
-        answer: 4, 
-        explanation: "Menurut I.A. Richards, struktur batin puisi terdiri dari 4 unsur pokok: Tema, Perasaan/Rasa, Nada/Sikap penyair, dan Amanat/Tujuan. Semua pernyataan (1, 2, 3, 4) benar."
-    },
-    {
-        question: "Kata <i>'membanting tulang'</i> dalam teks biografi seorang pengusaha sukses bermakna...",
-        options: [
-            "Berolahraga secara keras.",
-            "Mengalami kecelakaan kerja.",
-            "Bekerja keras tanpa kenal lelah.",
-            "Mengalahkan pesaing bisnis.",
-            "Menghancurkan barang dagangan."
-        ],
-        answer: 2, 
-        explanation: "'Membanting tulang' adalah ungkapan/idiom yang bermakna kiasan, yaitu bekerja dengan sangat keras/sungguh-sungguh."
-    },
-    {
-        question: "<b>Pernyataan Benar/Salah:</b> Surat penawaran barang atau jasa termasuk ke dalam jenis negosiasi lisan.",
-        options: opsiBenarSalahIndo,
-        answer: 1, 
-        explanation: "Surat penawaran merupakan bentuk komunikasi tertulis (menggunakan surat/dokumen), sehingga termasuk ke dalam negosiasi tertulis, bukan negosiasi lisan."
-    },
-    {
-        question: "Penggunaan konjungsi temporal (kata hubung penanda waktu) sangat penting dalam teks biografi. Berikut ini yang merupakan konjungsi temporal adalah...",
-        options: [
-            "Dan, serta, atau",
-            "Karena, sebab, oleh karena itu",
-            "Kemudian, selanjutnya, pada akhirnya",
-            "Meskipun, walaupun, sedangkan",
-            "Bahwa, agar, supaya"
-        ],
-        answer: 2, 
-        explanation: "Biografi menggunakan alur kronologis, sehingga banyak memakai kata hubung waktu (temporal) seperti: lalu, kemudian, selanjutnya, pada suatu hari."
-    },
-    {
-        question: "Penjual: <i>\"Wah, kalau Rp50.000,00 saya belum dapat untung, Mas. Bagaimana kalau Rp65.000,00 saja? Ini kualitas super, lho.\"</i><br><br>Tuturan di atas termasuk bagian...",
-        options: [
-            "Salam pembuka",
-            "Pengajuan",
-            "Penawaran",
-            "Persetujuan",
-            "Orientasi"
-        ],
-        answer: 2, 
-        explanation: "Kalimat tersebut menunjukkan respon dari pengajuan pembeli, di mana penjual menurunkan harga sedikit dari harga awal namun menaikkannya dari harga tawaran pembeli (proses tawar-menawar = penawaran)."
-    },
-    {
-        question: "<b>Pernyataan:</b> Membaca puisi (deklamasi) membutuhkan pelafalan, intonasi, dan ekspresi yang tepat.<br><br><b>Sebab</b><br><br><b>Alasan:</b> Nada dan ekspresi pembaca sangat menentukan apakah amanat dan emosi puisi dapat tersampaikan kepada pendengar atau tidak.",
-        options: opsiSebabAkibatIndo,
-        answer: 0, 
-        explanation: "Pernyataan benar dan alasan benar serta memiliki hubungan kausalitas. Tanpa intonasi dan ekspresi/mimik (seperti nada sedih, marah, atau semangat), nyawa dari puisi tidak akan sampai ke pendengar."
-    },
-    {
-        question: "Ciri-ciri mosi debat yang baik meliputi...<br><br>(1) Seimbang (bisa didebat pro dan kontra).<br>(2) Jelas dan tidak ambigu.<br>(3) Merupakan isu faktual atau sedang hangat dibicarakan.<br>(4) Harus diajukan oleh Tim Oposisi.",
-        options: opsiKompleksIndo,
-        answer: 0, 
-        explanation: "Mosi harus seimbang (1), jelas definisinya (2), dan relevan/faktual (3). Poin (4) salah karena mosi biasanya disiapkan oleh panitia atau penyelenggara debat, bukan diajukan eksklusif oleh tim Oposisi."
-    },
-    {
-        question: "Langkah pertama yang paling krusial sebelum menyusun teks biografi seorang tokoh adalah...",
-        options: [
-            "Mengarang cerita fiksi tentang tokoh tersebut agar dramatis.",
-            "Menentukan judul yang paling clickbait.",
-            "Mengumpulkan data dan fakta melalui wawancara, buku, atau dokumen.",
-            "Mencetak buku biografi di percetakan.",
-            "Menentukan majas yang akan digunakan."
-        ],
-        answer: 2, 
-        explanation: "Biografi adalah teks faktual (berdasarkan kenyataan). Oleh karena itu, riset dan pengumpulan data yang valid adalah langkah pertama dan paling utama sebelum mulai menulis."
-    },
-    {
-        question: "<b>Pernyataan Benar/Salah:</b> Dalam debat, tim afirmasi bertugas memberikan argumen yang membantah atau menentang mosi yang sedang diperdebatkan.",
-        options: opsiBenarSalahIndo,
-        answer: 1, 
-        explanation: "Tim yang mendukung mosi adalah Tim Afirmasi (Pro). Tim yang membantah/menentang mosi disebut Tim Oposisi (Kontra)."
-    },
-    {
-        question: "Rima atau persajakan dalam puisi berfungsi untuk...",
-        options: [
-            "Menyembunyikan makna puisi dari pembaca awam.",
-            "Memberikan efek musikalitas/keindahan bunyi saat dibaca.",
-            "Menambah jumlah kata agar puisi terlihat panjang.",
-            "Menjelaskan asal-usul penyair.",
-            "Memisahkan satu bait dengan bait lainnya secara visual."
-        ],
-        answer: 1, 
-        explanation: "Rima (persamaan bunyi pada akhir larik) memberikan efek ritme dan nada yang memperindah puisi saat dideklamasikan (efek musikalitas)."
-    },
-    {
-        question: "Kesimpulan dalam teks debat harus bersifat...",
-        options: [
-            "Memihak pada tim yang pandai berbicara.",
-            "Menyerang kelemahan moderator.",
-            "Objektif, meringkas poin-poin argumen utama, dan berpegang pada esensi mosi.",
-            "Menambah argumen baru yang belum pernah dibahas.",
-            "Menggantung agar pendengar menebak sendiri kelanjutannya."
-        ],
-        answer: 2, 
-        explanation: "Kesimpulan debat bukan tempat memunculkan argumen baru. Kesimpulan harus objektif dan merupakan benang merah dari argumen yang telah disampaikan selama perdebatan."
-    },
-    {
-        question: "Contoh kata konkret (kata yang maknanya dapat ditangkap indra) dalam puisi adalah...<br><br>(1) Rindu<br>(2) Batu karang<br>(3) Sedih<br>(4) Darah",
-        options: opsiKompleksIndo,
-        answer: 2, 
-        explanation: "Kata konkret dapat ditangkap panca indra. 'Batu karang' (bisa dilihat/diraba) dan 'Darah' (bisa dilihat/dirasa) adalah konkret (2 dan 4). 'Rindu' dan 'Sedih' adalah kata abstrak (perasaan)."
-    },
-    {
-        question: "<b>Pernyataan:</b> Bahasa yang digunakan dalam teks biografi sebagian besar didominasi oleh kalimat dalam bentuk masa lampau (Past Tense jika dalam bahasa Inggris).<br><br><b>Sebab</b><br><br><b>Alasan:</b> Biografi menceritakan riwayat, sejarah, dan peristiwa yang sudah berlalu dalam kehidupan seorang tokoh.",
-        options: opsiSebabAkibatIndo,
-        answer: 0, 
-        explanation: "Pernyataan benar, alasan benar, dan berhubungan. Karena berkisah tentang perjalanan hidup yang sudah terjadi, biografi secara alamiah menggunakan penanda waktu lampau (telah, pada tahun..., saat kecil)."
-    },
-    {
-        question: "Negosiasi yang dilakukan di pasar antara pembeli dan pedagang sayur tergolong ke dalam jenis negosiasi...",
-        options: [
-            "Formal tertulis",
-            "Informal / Tidak resmi",
-            "Delegasi perwakilan",
-            "Arbitrase",
-            "Bipartit hukum"
-        ],
-        answer: 1, 
-        explanation: "Negosiasi di pasar bersifat santai, tanpa aturan tertulis baku, dan bahasa yang digunakan seringkali merupakan ragam bahasa lisan santai, sehingga termasuk negosiasi informal."
-    },
-    {
-        question: "Fakta sangat penting dalam debat karena...",
-        options: [
-            "Fakta dapat menjatuhkan harga diri lawan.",
-            "Fakta membuat suara pembicara menjadi lebih keras.",
-            "Argumen tanpa fakta hanya berupa opini kosong yang mudah dipatahkan (fallacy).",
-            "Fakta memperpanjang durasi waktu debat.",
-            "Moderator menyukai fakta."
-        ],
-        answer: 2, 
-        explanation: "Inti dari argumen yang kuat adalah A-R-E (Assertion, Reasoning, Evidence). Fakta (Evidence) berfungsi sebagai bukti nyata yang menopang logika agar tidak menjadi sekadar klaim sepihak."
-    },
-    {
-        question: "<i>Rendra merupakan tokoh penting dalam dunia teater. Karyanya banyak diakui oleh dunia. Bahkan ia dijuluki \"Si Burung Merak\" karena penampilannya.</i><br><br>Dalam kaidah teks biografi, penggalan teks tersebut merupakan pemakaian kaidah...",
-        options: [
-            "Penggunaan kata sifat (Adjektiva).",
-            "Penggunaan kata kerja pasif.",
-            "Rujukan kata (Pronomina).",
-            "Kata kerja tindakan.",
-            "Majas ironi."
-        ],
-        answer: 2, 
-        explanation: "Penggunaan kata 'Karyanya' dan 'ia' merujuk kembali pada subjek/tokoh utama yaitu 'Rendra'. Ini merupakan kaidah rujukan kata (pronomina)."
-    },
-    {
-        question: "<b>Pernyataan Benar/Salah:</b> Meringkas teks biografi dilakukan dengan cara mengubah seluruh kata-kata aslinya dengan kata-kata sendiri tanpa harus mempertahankan urutan kronologis kejadian dari teks aslinya.",
-        options: opsiBenarSalahIndo,
-        answer: 1, 
-        explanation: "Meskipun diringkas, urutan waktu/kronologi sejarah tokoh (Orientasi - Peristiwa) HARUS tetap dipertahankan agar tidak mengubah alur dan kebenaran fakta sejarah dari biografi tersebut."
+        story: "Petunjuk: Pilihan Ganda Kompleks (A: 1,2,3 Benar | B: 1,3 Benar | C: 2,4 Benar | D: 4 Benar | E: Semua Benar)",
+        question: "Keterampilan mengolah teks negosiasi dapat diaplikasikan langsung dalam kehidupan nyata sehari-hari, tecermin pada situasi:<br><br>(1) Dramatika tawar-menawar harga di los pasar tradisional<br>(2) Dewan OSIS yang mempresentasikan proposal izin acara kepada jajaran Kepala Sekolah<br>(3) Perwakilan serikat karyawan yang menuntut kesejahteraan/kenaikan gaji kepada atasan<br>(4) Khidmatnya membacakan riwayat dan jejak hidup para pahlawan kemerdekaan",
+        options: ["A. (1), (2), dan (3) benar", "B. (1) dan (3) benar", "C. (2) dan (4) benar", "D. Hanya (4) yang benar", "E. Semuanya benar"],
+        answer: 0,
+        explanation: "Nomor 1, 2, dan 3 adalah representasi nyata situasi yang membutuhkan negosiasi dan kesepakatan dua belah pihak. Sementara nomor 4 adalah bentuk kegiatan pasif membaca teks biografi."
     }
 ];
