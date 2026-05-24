@@ -14,7 +14,7 @@ function loadPKWUData() {
             // 1. Menambahkan Mata Pelajaran ke Menu Utama
             subjects.push({ 
                 id: 'pkwu', 
-                name: 'Prakarya dan Kewirausahaan', 
+                name: 'PKWU', 
                 icon: 'ph-plant', 
                 color: 'text-green-500 dark:text-green-400' 
             });
