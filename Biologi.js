@@ -6,8 +6,8 @@ if (typeof window.subjects === "undefined") {
 window.subjects.push({
     id: "biologi",
     name: "Biologi",
-    icon: "ph-plant", // Ikon tanaman/daun untuk melambangkan Biologi
-    color: "text-green-500 dark:text-green-400" 
+    icon: "ph-dna", // Ikon tanaman/daun untuk melambangkan Biologi
+    color: 'text-green-500 dark:text-green-400'
 });
 
 if (typeof window.quizData === "undefined") {
